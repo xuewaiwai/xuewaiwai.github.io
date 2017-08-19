@@ -3,18 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>薛三岁的秘密花园</title>
+  <title>http服务与ajax编程 | 薛三岁的秘密花园</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="陪伴是最长情的告白">
-<meta property="og:type" content="website">
-<meta property="og:title" content="薛三岁的秘密花园">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="服务器 前言：通俗的讲，能够提供某种服务的机器（计算机）称为服务器  服务器软件 使计算机具备提供某种服务能力的应用软件，称为服务器软件，通过安装相应的服务软件，然后进行配置后就可以使计算具备了提供某种服务的能力。  常见的服务器软件有：  文件服务器：Server-U、FileZilla、VsFTP等（FTP是File Transfer Protocol文件传输协议）； 数据库服务器：oracl">
+<meta name="keywords" content="Http协议,ajax,json,php,同源与跨域">
+<meta property="og:type" content="article">
+<meta property="og:title" content="http服务与ajax编程">
+<meta property="og:url" content="http://yoursite.com/2017/08/18/我的博客/index.html">
 <meta property="og:site_name" content="薛三岁的秘密花园">
-<meta property="og:description" content="陪伴是最长情的告白">
+<meta property="og:description" content="服务器 前言：通俗的讲，能够提供某种服务的机器（计算机）称为服务器  服务器软件 使计算机具备提供某种服务能力的应用软件，称为服务器软件，通过安装相应的服务软件，然后进行配置后就可以使计算具备了提供某种服务的能力。  常见的服务器软件有：  文件服务器：Server-U、FileZilla、VsFTP等（FTP是File Transfer Protocol文件传输协议）； 数据库服务器：oracl">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-08-19T13:19:18.873Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="薛三岁的秘密花园">
-<meta name="twitter:description" content="陪伴是最长情的告白">
+<meta name="twitter:title" content="http服务与ajax编程">
+<meta name="twitter:description" content="服务器 前言：通俗的讲，能够提供某种服务的机器（计算机）称为服务器  服务器软件 使计算机具备提供某种服务能力的应用软件，称为服务器软件，通过安装相应的服务软件，然后进行配置后就可以使计算具备了提供某种服务的能力。  常见的服务器软件有：  文件服务器：Server-U、FileZilla、VsFTP等（FTP是File Transfer Protocol文件传输协议）； 数据库服务器：oracl">
   
     <link rel="alternate" href="/atom.xml" title="薛三岁的秘密花园" type="application/atom+xml">
   
@@ -63,54 +65,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/08/19/hello-world/" class="article-date">
-  <time datetime="2017-08-19T12:45:48.644Z" itemprop="datePublished">2017-08-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/19/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/08/19/hello-world/" data-id="cj6jc02d20000y4dvkvcjnjuo" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-我的博客" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-我的博客" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/08/18/我的博客/" class="article-date">
   <time datetime="2017-08-18T08:59:08.000Z" itemprop="datePublished">2017-08-18</time>
@@ -127,8 +82,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/18/我的博客/">http服务与ajax编程</a>
+    <h1 class="article-title" itemprop="name">
+      http服务与ajax编程
     </h1>
   
 
@@ -787,10 +742,23 @@
     </footer>
   </div>
   
-</article>
-
+    
+<nav id="article-nav">
+  
+    <a href="/2017/08/19/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+</nav>
 
   
+</article>
 
 </section>
         
